@@ -1,0 +1,19 @@
+vote_project:
+    resource: "@VoteBundle/Resources/config/routing/project.yml"
+    prefix:   /project
+
+vote_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: VoteBundle:Default:index }
+
+vote_increase:
+    path: /increase/{id}
+    defaults: { _controller: VoteBundle:Vote:increaseVote }
+
+vote_decrease:
+    path: /decrease/{id}
+    defaults: { _controller: VoteBundle:Vote:decreaseVote }
+
+vote_admin:
+    resource: "@VoteBundle/Resources/config/routing/adminVote.yml"
+    prefix:   /admin/vote

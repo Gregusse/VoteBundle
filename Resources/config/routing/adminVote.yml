@@ -1,0 +1,3 @@
+vote_valider:
+    path: /validation/{id}
+    defaults: { _controller: VoteBundle:VoteAdmin:valider }
